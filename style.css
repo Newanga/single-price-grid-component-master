@@ -1,0 +1,125 @@
+/* 
+<----CSS Order-------> 
+1.common
+2.Community
+3.Subscription
+4.Us
+*/
+
+/* Common */
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    /* Remove the scrollbar */
+    height: 100vh;
+    margin:0px;
+
+    background-color:#e5eff5;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px; 
+    color: white;
+    font-weight: 300;
+}
+
+.wrapper{
+    margin: 72px auto;
+    min-width: 375px;
+	max-width: 375px;
+    display: grid;
+    grid-template-areas: 
+    "community"
+    "subscription"
+    "us";
+}
+
+section{
+    padding: 24px;
+}
+
+.wrapper section:nth-child(1){
+    grid-area: community;
+    background: #fff;
+    
+}
+
+.wrapper section:nth-child(2){
+    grid-area: subscription;
+    background:#2BB3B1;
+}
+
+.wrapper section:nth-child(3){
+    grid-area: us;
+    background: #4ABEBD;
+}
+
+
+/* Community */
+.community header{
+    color: 	#2ab2af;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.community p{
+    color: 	#c0df34;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.community p:last-child{
+    color: 	#98a6bd;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+/* subscription */
+
+.subscription header{
+    font-size: 1.2rem;
+}
+.subscription p span:first-child{
+    font-size: 2.0rem;
+}
+
+.subscription p span:last-child{
+    color: #e5eff5;
+}
+
+.subscription p:last-child{
+    font-weight: 700;
+}
+
+.subscription button{
+    border-radius: 5px;
+    border: #fff;
+    background-color: #c0df34;
+    width: 100%;
+    min-height: 48px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Us */
+.us header{
+    font-weight: 700;
+}
+
+.us ul{
+    padding: 0;
+    list-style-type: none;
+    color: #a8f9fad2;
+    font-size: 0.9rem;
+}
+.us ul li{
+    margin: 0 0 0.1875rem 0;
+}
+
