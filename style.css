@@ -4,6 +4,7 @@
 2.Community
 3.Subscription
 4.Us
+5.Media Query 
 */
 
 /* Common */
@@ -123,3 +124,27 @@ section{
     margin: 0 0 0.1875rem 0;
 }
 
+/* Media Query */
+@media (min-width: 800px){
+    body{
+        display: flex;
+        align-items: center;
+    }
+    .community p:last-child{
+        font-size: 1.02rem;
+    }
+    .community{
+        padding: auto;
+        justify-self: center;
+    }
+    .wrapper{
+        min-width: 635px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.84fr 1fr;
+        grid-template-areas: 
+        "community community"
+        "subscription us";
+    }
+
+
+}
